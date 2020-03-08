@@ -1,0 +1,101 @@
+using Animations;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace UI
+{
+    [RequireComponent(typeof(SwipeController))]
+    public class SwipeAnimator : MonoBehaviour
+    {
+        [SerializeField] private Graphic m_object = null;
+        [SerializeField] private SwipeConfig m_config = null;
+        
+        [Header("Animations")]
+        
+        [SerializeField] private AnimationConfig m_tiltConfig = null;
+        [SerializeField] private AnimationConfig m_slideConfig = null;
+        [SerializeField] private AnimationConfig m_swipeOutConfig = null;
+        [SerializeField] private AnimationConfig m_cancelConfig = null;
+
+        private const float Rest_Tilt = 0.5f;
+
+        private SwipeController controller = null;
+        private new RectTransform transform = null;
+        private PropertyCurve tiltAnimation = null;
+        private PropertyCurve slideAnimation = null;
+        private PropertyAnimation swipeOutAnimation = null;
+        private PropertyAnimation cancelAnimation = null;
+
+        private void Awake()
+        {
+            controller = GetComponent<SwipeController>();
+            transform = m_object.GetComponent<RectTransform>();
+        }
+
+        private void UpdateRotationAnimated(float value)
+        {
+            float angle = (value - Rest_Tilt) * 2 * m_config.m_maxTiltAngle;
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+
+        private void UpdatePosition(float value)
+        {
+            transform.anchoredPosition = Vector2.right * value;
+        }
+        
+        private void UpdatePositionAnimated(float value)
+        {
+            float pivotOffset = (value - Rest_Tilt) * 2 * m_config.m_maxSlideDistance;
+            transform.anchoredPosition = Vector2.right * pivotOffset;
+        }
+
+        private void OnDragged(float percent)
+        {
+            tiltAnimation.Progress = percent;
+            slideAnimation.Progress = percent;
+        }
+
+        private void OnCancel()
+        {
+            cancelAnimation.StartValue = tiltAnimation.Progress;
+            cancelAnimation.EndValue = 0.5f;
+            cancelAnimation.Start();
+        }
+
+        private void OnSwipedLeft()
+        {
+            swipeOutAnimation.StartValue = transform.anchoredPosition.x;
+            swipeOutAnimation.EndValue = -m_config.m_swipeOutDistance;
+            swipeOutAnimation.Start();
+        }
+
+        private void OnSwipedRight()
+        {
+            swipeOutAnimation.StartValue = transform.anchoredPosition.x;
+            swipeOutAnimation.EndValue = +m_config.m_swipeOutDistance;
+            swipeOutAnimation.Start();
+        }
+
+
+        public void Init()
+        {
+            tiltAnimation = new PropertyCurve(m_tiltConfig, UpdateRotationAnimated);
+            slideAnimation = new PropertyCurve(m_slideConfig, UpdatePositionAnimated);
+            swipeOutAnimation = new PropertyAnimation(this, m_swipeOutConfig, UpdatePosition);
+            cancelAnimation = new PropertyAnimation(this, m_cancelConfig, OnDragged);
+
+            controller.Dragged += OnDragged;
+            controller.Canceled += OnCancel;
+            controller.SwipedLeft += OnSwipedLeft;
+            controller.SwipedRight += OnSwipedRight;
+        }
+
+
+#if DEBUG
+        private void Start()
+        {
+            Init();
+        }
+#endif
+    }
+}
