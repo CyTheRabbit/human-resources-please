@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 723bffebc523468d9a76925779a9c432, type: 3}
   m_Name: Card Swipe
   m_EditorClassIdentifier: 
-  m_dragPositionScale: 400
+  m_dragPositionScale: 1000
   m_maxPercentTilt: 0.5
-  m_tiltTriggerPercent: 0.3
-  m_swipeTriggerPercent: 1
-  m_maxTiltAngle: 45
-  m_maxSlideDistance: 100
+  m_tiltTriggerPercent: 0.05
+  m_swipeTriggerPercent: 0.3
+  m_maxTiltAngle: -5
+  m_maxSlideDistance: 400
+  m_swipeOutDistance: 1250
