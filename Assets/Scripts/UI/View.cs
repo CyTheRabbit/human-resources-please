@@ -22,5 +22,7 @@ namespace UI
         public virtual void Show() {}
 
         public virtual void Hide() {}
+
+        public virtual void Refresh() {}
     }
 }
