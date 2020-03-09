@@ -10,7 +10,6 @@ namespace UI
     /// TiltLeft and TiltRight events are invoked when user intents to swipe in the direction and should be
     /// used to indicate action that swiping in that direction will launch.
     /// </remarks>
-    [RequireComponent(typeof(RectTransform))]
     public class SwipeController : MonoBehaviour
     {
         public event Action SwipedLeft = null;

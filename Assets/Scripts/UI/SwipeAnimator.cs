@@ -1,3 +1,4 @@
+using System;
 using Animations;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,9 @@ namespace UI
     [RequireComponent(typeof(SwipeController))]
     public class SwipeAnimator : MonoBehaviour
     {
+        public event Action SwipedOutLeft;
+        public event Action SwipedOutRight;
+        
         [SerializeField] private Graphic m_object = null;
         [SerializeField] private SwipeConfig m_config = null;
         
@@ -25,11 +29,21 @@ namespace UI
         private PropertyCurve slideAnimation = null;
         private PropertyAnimation swipeOutAnimation = null;
         private PropertyAnimation cancelAnimation = null;
+        
+        public RectTransform Target
+        {
+            get => transform;
+            set
+            {
+                if (transform != null) ResetAnimations();
+                transform = value;
+            }
+        }
 
         private void Awake()
         {
             controller = GetComponent<SwipeController>();
-            transform = m_object.GetComponent<RectTransform>();
+            if (m_target != null) Target = m_target.GetComponent<RectTransform>();
         }
 
         private void UpdateRotationAnimated(float value)
@@ -66,16 +80,23 @@ namespace UI
         {
             swipeOutAnimation.StartValue = transform.anchoredPosition.x;
             swipeOutAnimation.EndValue = -m_config.m_swipeOutDistance;
-            swipeOutAnimation.Start();
+            swipeOutAnimation.Start(() => SwipedOutLeft?.Invoke());
         }
 
         private void OnSwipedRight()
         {
             swipeOutAnimation.StartValue = transform.anchoredPosition.x;
             swipeOutAnimation.EndValue = +m_config.m_swipeOutDistance;
-            swipeOutAnimation.Start();
+            swipeOutAnimation.Start(() => SwipedOutRight?.Invoke());
         }
 
+
+        public void ResetAnimations()
+        {
+            swipeOutAnimation.Cancel();
+            cancelAnimation.Cancel();
+            OnDragged(Rest_Tilt);
+        }
 
         public void Init()
         {
@@ -89,13 +110,5 @@ namespace UI
             controller.SwipedLeft += OnSwipedLeft;
             controller.SwipedRight += OnSwipedRight;
         }
-
-
-#if DEBUG
-        private void Start()
-        {
-            Init();
-        }
-#endif
     }
 }
