@@ -11,7 +11,7 @@ namespace UI
         public event Action SwipedOutLeft;
         public event Action SwipedOutRight;
         
-        [SerializeField] private Graphic m_object = null;
+        [SerializeField] private Graphic m_target = null;
         [SerializeField] private SwipeConfig m_config = null;
         
         [Header("Animations")]

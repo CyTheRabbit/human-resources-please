@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c38cb72de304c5082c37701dce5295, type: 3}
-  m_Name: Application Manager
+  m_Script: {fileID: 11500000, guid: a1b1728d42ca4bc79a2371891e6b9bb8, type: 3}
+  m_Name: Config Manager
   m_EditorClassIdentifier: 
-  m_editorFrameRate: 60
-  m_events: {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
-  m_config: {fileID: 11400000, guid: dd8240f48e09645af8e9d3e45dd31ffa, type: 2}
+  m_game: {fileID: 11400000, guid: 4f95f758a40e74e8f9ba0dae8f1e14cd, type: 2}
