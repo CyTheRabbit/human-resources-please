@@ -18,4 +18,4 @@ MonoBehaviour:
   m_swipeTriggerPercent: 0.3
   m_maxTiltAngle: -5
   m_maxSlideDistance: 400
-  m_swipeOutDistance: 1250
+  m_swipeOutDistance: 1000
