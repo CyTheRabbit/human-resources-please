@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_archetypes:
   - {fileID: 11400000, guid: 9705197ece84547aca9f926e028f842a, type: 2}
+  - {fileID: 11400000, guid: f75654d37767149158056dc4ffdf036b, type: 2}
   m_names:
   - Phil Gud
   - Ben Heer

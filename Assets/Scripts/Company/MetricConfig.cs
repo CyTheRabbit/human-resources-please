@@ -1,3 +1,4 @@
+using Animations;
 using UnityEngine;
 
 namespace Company
@@ -8,5 +9,6 @@ namespace Company
         public string m_name = null;
         public Color m_color = Color.white;
         [Range(0, 1)] public float m_defaultValue = 0.5f;
+        public AnimationConfig m_barFill = null;
     }
 }
