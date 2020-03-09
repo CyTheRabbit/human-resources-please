@@ -10,6 +10,7 @@ public class GameManager : ScriptableObject
 
     private SwipeController swipeController = null;
     private SwipeAnimator swipeAnimator = null;
+    private CharacterGenerator generator = null;
 
     private Transform gameCanvas = null;
     private CharacterData currentCharacter = null;
@@ -31,11 +32,7 @@ public class GameManager : ScriptableObject
 
     private CharacterData GetNextCharacter()
     {
-        return new CharacterData
-        {
-            m_name = "New Character",
-            m_description = "+"
-        };
+        return generator.Generate();
     }
 
     private void Hire()
@@ -62,6 +59,9 @@ public class GameManager : ScriptableObject
         events = eventManager;
 
         gameCanvas = Instantiate(config.m_gameCanvasPrefab).transform;
+
+        generator = CreateInstance<CharacterGenerator>();
+        generator.Init(config.m_generator);
         
         currentCharacterView = Instantiate(config.m_characterCardPrefab, gameCanvas).GetComponent<View<CharacterData>>();
         
@@ -78,6 +78,8 @@ public class GameManager : ScriptableObject
         swipeAnimator.Target = currentCharacterView.GetComponent<RectTransform>();
         swipeAnimator.SwipedOutLeft += Skip;
         swipeAnimator.SwipedOutRight += Hire;
+        
+        events.MetricChanged += OnMetricChanged;
         
         ShowNextCard();
     }
