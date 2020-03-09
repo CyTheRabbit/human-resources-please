@@ -21,14 +21,9 @@ namespace Character
 
         public CharacterData Generate()
         {
-            GeneratorConfig.MetricChange change = SelectRandom(config.m_changes);
-            return new CharacterData
-            {
-                m_name = SelectRandom(config.m_names),
-                m_description = SelectRandom(config.m_descriptions),
-                m_metric_name = change.m_config.m_name,
-                m_metric_change = change.m_valueChange
-            };
+            Archetype archetype = SelectRandom(config.m_archetypes);
+            CharacterData data = archetype.Generate();
+            return data;
         }
     }
 }

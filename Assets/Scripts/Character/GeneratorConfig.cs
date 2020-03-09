@@ -14,6 +14,8 @@ namespace Character
             [Range(-1, 1)] public float m_valueChange = 0;
         }
 
+        public Archetype[] m_archetypes = null;
+        
         public string[] m_names = null;
         [TextArea] public string[] m_descriptions = null;
         public MetricChange[] m_changes = null;
