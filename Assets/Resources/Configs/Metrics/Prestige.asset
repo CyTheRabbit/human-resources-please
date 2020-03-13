@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfadb25972b34439a7d82c2b9449ec0e, type: 3}
   m_Name: R Metric
   m_EditorClassIdentifier: 
-  m_name: R
+  m_name: Prestige
   m_color: {r: 0.9882353, g: 0.16862746, b: 0.1764706, a: 1}
   m_defaultValue: 0.5
   m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}
