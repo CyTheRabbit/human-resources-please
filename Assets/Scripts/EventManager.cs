@@ -1,11 +1,37 @@
 ﻿using System;
-using Character;
+using Queue;
 using UnityEngine;
 
 public class EventManager : ScriptableObject
 {
-    [NonSerialized] public Action<CharacterData> CharacterHired = null;
-    [NonSerialized] public Action<CharacterData> CharacterSkipped = null;
-    [NonSerialized] public Action<string, float> MetricChanged = null;
-    [NonSerialized] public Action<string> MetricEnded = null;
+    [SerializeField] private QueueEvents m_queue = null;
+
+
+    public class CompanyEvents
+    {
+        public event Action MetricChanged = null;
+        public event Action MetricEmptied = null;
+
+        public void OnMetricChanged()
+        {
+            MetricChanged?.Invoke();
+        }
+
+        public void OnMetricEmptied()
+        {
+            MetricEmptied?.Invoke();
+        }
+    }
+
+    private CompanyEvents company = null;
+
+
+    public CompanyEvents Company => company;
+    public QueueEvents Queue => m_queue;
+
+
+    public void Init()
+    {
+        company = new CompanyEvents();
+    }
 }

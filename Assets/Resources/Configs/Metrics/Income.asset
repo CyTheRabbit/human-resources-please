@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfadb25972b34439a7d82c2b9449ec0e, type: 3}
-  m_Name: B Metric
+  m_Name: Income
   m_EditorClassIdentifier: 
   m_name: Income
   m_color: {r: 0.0627451, g: 0.41960785, b: 1, a: 1}

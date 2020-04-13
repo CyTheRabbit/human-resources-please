@@ -6,10 +6,17 @@ namespace Company
 {
     public class CompanyView : View<CompanyData>
     {
+        [SerializeField] private CompanyData m_model = null;
+        [Space]
         [SerializeField] private RectTransform m_metricsParent = null;
         [SerializeField] private GameObject m_metricViewPrefab = null;
         
         private readonly List<View<MetricData>> metrics = new List<View<MetricData>>();
+
+        public void Awake()
+        {
+            Init(m_model);
+        }
 
         public override void Init(CompanyData model)
         {

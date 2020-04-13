@@ -1,85 +1,58 @@
-using Character;
-using Company;
+using Card;
 using UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class GameManager : ScriptableObject
+public class GameManager : UIBehaviour
 {
-    private GameConfig config = null;
-    private EventManager events = null;
+    [SerializeField] private ConfigManager m_configs = null;
+    [SerializeField] private EventManager m_events = null;
+    [SerializeField] private DataManager m_data = null;
+    [Space]
+    [SerializeField] private SwipeController m_swipeController = null;
+    [SerializeField] private SwipeAnimator m_swipeAnimator = null;
+    [SerializeField] private RectTransform m_cardParent = null;
 
-    private SwipeController swipeController = null;
-    private SwipeAnimator swipeAnimator = null;
-    private CharacterGenerator generator = null;
 
-    private Transform gameCanvas = null;
-    private CharacterData currentCharacter = null;
-    private CompanyData company = null;
-    private View<CharacterData> currentCharacterView = null;
-    private View<CompanyData> companyView = null;
+    private static void SwipeLeftEvent(ISwipable card, BaseEventData _)
+    {
+        card.SwipeLeft();
+    }
+
+    private static void SwipeRightEvent(ISwipable card, BaseEventData _)
+    {
+        card.SwipeRight();
+    }
     
         
     private void ShowNextCard()
     {
-        currentCharacter = GetNextCharacter();
-        
-        currentCharacterView.Hide();
-        currentCharacterView.Init(currentCharacter);
-        currentCharacterView.Show();
-
-        swipeAnimator.ResetAnimations();
-    }
-
-    private CharacterData GetNextCharacter()
-    {
-        return generator.Generate();
-    }
-
-    private void Hire()
-    {
-        events.CharacterHired?.Invoke(currentCharacter);
-        ShowNextCard();
+        GameObject card = m_data.CurrentCard;
+        card.transform.SetParent(m_cardParent, false);
+        ExecuteEvents.Execute<IViewable>(card, null, BaseView.RefreshEvent);
+        ExecuteEvents.Execute<IViewable>(card, null, BaseView.ShowEvent);
+        m_swipeAnimator.ResetAnimations();
     }
     
-    private void Skip()
+    private void OnSwipeLeft()
     {
-        events.CharacterSkipped?.Invoke(currentCharacter);
-        ShowNextCard();
+        ExecuteEvents.Execute<ISwipable>(m_data.CurrentCard, null, SwipeLeftEvent);
+        m_events.Queue.OnCardRemoved();
     }
     
-    private void OnMetricChanged(string metricName, float newValue)
+    private void OnSwipeRight()
     {
-        companyView.Refresh();
+        ExecuteEvents.Execute<ISwipable>(m_data.CurrentCard, null, SwipeRightEvent);
+        m_events.Queue.OnCardRemoved();
     }
 
 
-    public void Init(GameConfig gameConfig, EventManager eventManager)
+    public void Init()
     {
-        config = gameConfig;
-        events = eventManager;
-
-        gameCanvas = Instantiate(config.m_gameCanvasPrefab).transform;
-
-        generator = CreateInstance<CharacterGenerator>();
-        generator.Init(config.m_generator);
-        
-        currentCharacterView = Instantiate(config.m_characterCardPrefab, gameCanvas).GetComponent<View<CharacterData>>();
-        
-        company = CreateInstance<CompanyData>();
-        company.Init(config.m_companyConfig, events);
-
-        companyView = Instantiate(config.m_companyUiPrefab).GetComponent<View<CompanyData>>();
-        companyView.Init(company);
-
-        swipeController = Instantiate(config.m_swipeControllerPrefab).GetComponent<SwipeController>();
-        
-        swipeAnimator = swipeController.GetComponent<SwipeAnimator>();
-        swipeAnimator.Init();
-        swipeAnimator.Target = currentCharacterView.GetComponent<RectTransform>();
-        swipeAnimator.SwipedOutLeft += Skip;
-        swipeAnimator.SwipedOutRight += Hire;
-        
-        events.MetricChanged += OnMetricChanged;
+        m_swipeAnimator.Init();
+        m_swipeAnimator.Target = m_cardParent;
+        m_swipeAnimator.SwipedOutLeft += OnSwipeLeft;
+        m_swipeAnimator.SwipedOutRight += OnSwipeRight;
         
         ShowNextCard();
     }

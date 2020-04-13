@@ -11,15 +11,11 @@ public class AppManager : ScriptableObject
     [SerializeField] private EventManager m_events = null;
     [SerializeField] private ConfigManager m_config = null;
 
-    private GameManager gameManager = null;
-    
     private void Init()
     {
 #if UNITY_EDITOR
         Application.targetFrameRate = m_editorFrameRate;
 #endif
-        gameManager = CreateInstance<GameManager>();
-        gameManager.Init(m_config.m_game, m_events);
     }
 
     private const string AppManagerPath = "Application Manager";
