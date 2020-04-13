@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Company;
 using UnityEngine;
 
@@ -14,11 +15,13 @@ namespace Character
             [Range(-1, 1)] public float m_valueChange = 0;
         }
 
-        public Archetype[] m_archetypes = null;
+        [SerializeField] private string[] m_names = null;
         
-        public string[] m_names = null;
-        [TextArea] public string[] m_descriptions = null;
-        public MetricChange[] m_changes = null;
+        [SerializeField, TextArea(minLines: 3, maxLines: 7)]
+        private string[] m_descriptions = null;
 
+
+        public IReadOnlyList<string> Names => m_names;
+        public IReadOnlyList<string> Descriptions => m_descriptions;
     }
 }

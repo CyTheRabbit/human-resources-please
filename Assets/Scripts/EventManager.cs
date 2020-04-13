@@ -1,11 +1,18 @@
-﻿using System;
-using Character;
+﻿using Company;
+using Queue;
 using UnityEngine;
 
-public class EventManager : ScriptableObject
+public class EventManager : BaseManager
 {
-    [NonSerialized] public Action<CharacterData> CharacterHired = null;
-    [NonSerialized] public Action<CharacterData> CharacterSkipped = null;
-    [NonSerialized] public Action<string, float> MetricChanged = null;
-    [NonSerialized] public Action<string> MetricEnded = null;
+    [SerializeField] private QueueEvents m_queue = null;
+    [SerializeField] private CompanyEvents m_company = null;
+
+
+    public CompanyEvents Company => m_company;
+    public QueueEvents Queue => m_queue;
+
+
+    public override void Init()
+    {
+    }
 }

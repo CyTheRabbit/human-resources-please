@@ -5,12 +5,13 @@ namespace Company
     [CreateAssetMenu(menuName = "Data/Company Metric")]
     public class MetricData : ScriptableObject
     {
-        private MetricConfig config = null;
-        private EventManager events = null;
+        [SerializeField] private MetricConfig m_config = null;
+        [SerializeField] private CompanyEvents m_events = null;
+        
         private float currentValue = 1.0f;
 
 
-        public MetricConfig Config => config;
+        public MetricConfig Config => m_config;
         
         public float Value
         {
@@ -18,17 +19,14 @@ namespace Company
             set
             {
                 currentValue = Mathf.Clamp01(value);
-                events.MetricChanged?.Invoke(config.m_name, currentValue);
-                if (currentValue <= 0.0f) events.MetricEnded?.Invoke(config.m_name);
+                m_events.OnMetricChanged();
+                if (currentValue <= 0.0f) m_events.OnMetricEmptied();
             }
         }
 
-        public void Init(MetricConfig metricConfig, EventManager eventManager)
+        public void Init()
         {
-            config = metricConfig;
-            events = eventManager;
-
-            currentValue = config.m_defaultValue;
+            currentValue = m_config.m_defaultValue;
         }
     }
 }
