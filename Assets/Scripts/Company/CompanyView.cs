@@ -7,6 +7,7 @@ namespace Company
     public class CompanyView : View<CompanyData>
     {
         [SerializeField] private CompanyData m_model = null;
+        [SerializeField] private EventManager m_events = null;
         [Space]
         [SerializeField] private RectTransform m_metricsParent = null;
         [SerializeField] private GameObject m_metricViewPrefab = null;
@@ -29,6 +30,8 @@ namespace Company
                 view.Init(metric);
                 metrics.Add(view);
             }
+
+            m_events.Company.MetricChanged += Refresh;
         }
 
         public override void Refresh()

@@ -174,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_model: {fileID: 11400000, guid: 39230e448e9dd48c48f5f0b2d1ea852a, type: 2}
+  m_events: {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
   m_metricsParent: {fileID: 7640207512038880269}
   m_metricViewPrefab: {fileID: 7869855737275138058, guid: d901ca92408fd4440aa3adef8c474710,
     type: 3}

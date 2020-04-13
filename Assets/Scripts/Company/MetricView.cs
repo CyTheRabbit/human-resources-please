@@ -31,6 +31,7 @@ namespace Company
 
         public override void Refresh()
         {
+            if (Mathf.Approximately(fillAnimation.EndValue, Model.Value)) return;
             fillAnimation.StartValue = fillAnimation.EndValue;
             fillAnimation.EndValue = Model.Value;
             fillAnimation.Start();

@@ -5,7 +5,7 @@ namespace Card
 {
     public class MetricUpdater : MonoBehaviour, ISwipable
     {
-        [SerializeField] private MetricData m_metric;
+        [SerializeField] private MetricData m_metric = null;
         [SerializeField, Range(-1, 1)] private float m_hireValue = 0;
         [SerializeField, Range(-1, 1)] private float m_skipPenalty = 0;
 
