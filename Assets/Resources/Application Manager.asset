@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Application Manager
   m_EditorClassIdentifier: 
   m_editorFrameRate: 60
-  m_events: {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
-  m_config: {fileID: 11400000, guid: dd8240f48e09645af8e9d3e45dd31ffa, type: 2}
+  m_managers:
+  - {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
+  - {fileID: 11400000, guid: 2418114ded350443b922a080ab282cd9, type: 2}
+  - {fileID: 11400000, guid: dd8240f48e09645af8e9d3e45dd31ffa, type: 2}

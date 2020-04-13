@@ -1,37 +1,18 @@
-﻿using System;
+﻿using Company;
 using Queue;
 using UnityEngine;
 
-public class EventManager : ScriptableObject
+public class EventManager : BaseManager
 {
     [SerializeField] private QueueEvents m_queue = null;
+    [SerializeField] private CompanyEvents m_company = null;
 
 
-    public class CompanyEvents
-    {
-        public event Action MetricChanged = null;
-        public event Action MetricEmptied = null;
-
-        public void OnMetricChanged()
-        {
-            MetricChanged?.Invoke();
-        }
-
-        public void OnMetricEmptied()
-        {
-            MetricEmptied?.Invoke();
-        }
-    }
-
-    private CompanyEvents company = null;
-
-
-    public CompanyEvents Company => company;
+    public CompanyEvents Company => m_company;
     public QueueEvents Queue => m_queue;
 
 
-    public void Init()
+    public override void Init()
     {
-        company = new CompanyEvents();
     }
 }

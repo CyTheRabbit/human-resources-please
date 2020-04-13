@@ -8,14 +8,14 @@ public class AppManager : ScriptableObject
 {
     [SerializeField] private int m_editorFrameRate = 60;
 
-    [SerializeField] private EventManager m_events = null;
-    [SerializeField] private ConfigManager m_config = null;
+    [SerializeField] private BaseManager[] m_managers = null;
 
     private void Init()
     {
 #if UNITY_EDITOR
         Application.targetFrameRate = m_editorFrameRate;
 #endif
+        foreach (BaseManager manager in m_managers) manager.Init();
     }
 
     private const string AppManagerPath = "Application Manager";

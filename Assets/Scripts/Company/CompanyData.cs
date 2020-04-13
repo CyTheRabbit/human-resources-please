@@ -6,7 +6,7 @@ namespace Company
     public class CompanyData : ScriptableObject
     {
         [SerializeField] private MetricData[] m_metrics = null;
-        [SerializeField] private EventManager.CompanyEvents m_events = null;
+        [SerializeField] private CompanyEvents m_events = null;
 
 
         public MetricData[] Metrics => m_metrics;

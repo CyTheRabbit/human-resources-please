@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using Company;
-using Queue;
 using UnityEngine;
 
 /// <summary>
@@ -9,7 +6,7 @@ using UnityEngine;
 /// that is not easily accessible from scene hierarchy.
 /// </summary>
 [CreateAssetMenu(fileName = "Data Manager", menuName = "Managers/Data Manager", order = 0)]
-public class DataManager : ScriptableObject
+public class DataManager : BaseManager
 {
     [SerializeField] private EventManager m_events = null;
     [SerializeField] private MetricData[] m_metrics = null;
@@ -32,7 +29,9 @@ public class DataManager : ScriptableObject
     }
 
 
-    public void Init()
+    public override void Init()
     {
+        currentCard = null;
+        foreach (MetricData metric in Metrics) metric.Init();
     }
 }

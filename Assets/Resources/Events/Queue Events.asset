@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd95ebaa0eae9433d96b67ac7c0623e3, type: 3}
-  m_Name: Event Manager
+  m_Script: {fileID: 11500000, guid: e63a967b836740e594f4843047c62a93, type: 3}
+  m_Name: Queue Events
   m_EditorClassIdentifier: 
-  m_queue: {fileID: 11400000, guid: cfab7ad1d3176407281cd461f6fbd8d0, type: 2}
-  m_company: {fileID: 11400000, guid: 87ca4a2ebb7154f37b97ae1f01800c3d, type: 2}

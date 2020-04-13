@@ -6,7 +6,7 @@ namespace Company
     public class MetricData : ScriptableObject
     {
         [SerializeField] private MetricConfig m_config = null;
-        [SerializeField] private EventManager.CompanyEvents m_events = null;
+        [SerializeField] private CompanyEvents m_events = null;
         
         private float currentValue = 1.0f;
 
