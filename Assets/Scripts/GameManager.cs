@@ -3,7 +3,7 @@ using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GameManager : UIBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] private ConfigManager m_configs = null;
     [SerializeField] private EventManager m_events = null;
@@ -12,6 +12,12 @@ public class GameManager : UIBehaviour
     [SerializeField] private SwipeController m_swipeController = null;
     [SerializeField] private SwipeAnimator m_swipeAnimator = null;
     [SerializeField] private RectTransform m_cardParent = null;
+
+
+    private void Awake()
+    {
+        Init();
+    }
 
 
     private static void SwipeLeftEvent(ISwipable card, BaseEventData _)
@@ -32,6 +38,12 @@ public class GameManager : UIBehaviour
         ExecuteEvents.Execute<IViewable>(card, null, BaseView.RefreshEvent);
         ExecuteEvents.Execute<IViewable>(card, null, BaseView.ShowEvent);
         m_swipeAnimator.ResetAnimations();
+    }
+
+    private void HidePrevCard()
+    {
+        GameObject card = m_data.CurrentCard;
+        ExecuteEvents.Execute<IViewable>(card, null, BaseView.HideEvent);
     }
     
     private void OnSwipeLeft()
@@ -54,6 +66,7 @@ public class GameManager : UIBehaviour
         m_swipeAnimator.SwipedOutLeft += OnSwipeLeft;
         m_swipeAnimator.SwipedOutRight += OnSwipeRight;
         
-        ShowNextCard();
+        m_events.Queue.CardRemoved += HidePrevCard;
+        m_events.Queue.CardChanged += ShowNextCard;
     }
 }
