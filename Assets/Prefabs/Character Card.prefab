@@ -313,7 +313,6 @@ GameObject:
   m_Component:
   - component: {fileID: 20246482016484917}
   - component: {fileID: 20246482016484916}
-  - component: {fileID: 20246482016484919}
   m_Layer: 5
   m_Name: Character View
   m_TagString: Untagged
@@ -353,19 +352,3 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &20246482016484919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20246482016484914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a90de7822a446e6869e25de0b2d1e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_nameText: {fileID: 20246481256650295}
-  m_descriptionText: {fileID: 20246481825908261}
-  m_showAlpha: {fileID: 11400000, guid: fb8230cb0f2914cbf8c3f8eed1438690, type: 2}
-  m_showScale: {fileID: 11400000, guid: fb8230cb0f2914cbf8c3f8eed1438690, type: 2}
