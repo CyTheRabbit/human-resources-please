@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Prestige
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: 1013565e4259b4026808ad5410d0fdee, type: 2}
+  m_events: {fileID: 11400000, guid: 87ca4a2ebb7154f37b97ae1f01800c3d, type: 2}

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Comfort
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: 5cf98c7f983184ea39f62652b40975bc, type: 2}
+  m_events: {fileID: 11400000, guid: 87ca4a2ebb7154f37b97ae1f01800c3d, type: 2}

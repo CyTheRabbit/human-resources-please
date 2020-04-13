@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Income
   m_EditorClassIdentifier: 
   m_config: {fileID: 11400000, guid: 7ed2f5dd03a324575a4f7231f3a397dc, type: 2}
+  m_events: {fileID: 11400000, guid: 87ca4a2ebb7154f37b97ae1f01800c3d, type: 2}
