@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         GameObject card = m_data.CurrentCard;
         ExecuteEvents.Execute<IViewable>(card, null, BaseView.HideEvent);
+        Destroy(card);
     }
     
     private void OnSwipeLeft()
@@ -66,7 +67,7 @@ public class GameManager : MonoBehaviour
         m_swipeAnimator.SwipedOutLeft += OnSwipeLeft;
         m_swipeAnimator.SwipedOutRight += OnSwipeRight;
         
-        m_events.Queue.CardRemoved += HidePrevCard;
+        m_events.Queue.BeforeCardChanged += HidePrevCard;
         m_events.Queue.CardChanged += ShowNextCard;
     }
 }

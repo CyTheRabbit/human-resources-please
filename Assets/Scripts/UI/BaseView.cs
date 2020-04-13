@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace UI
 {
-    public class BaseView : UIBehaviour, IViewable
+    public class BaseView : MonoBehaviour, IViewable
     {
         protected bool Visible
         {
