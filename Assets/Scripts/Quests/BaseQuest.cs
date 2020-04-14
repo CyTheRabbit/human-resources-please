@@ -1,0 +1,46 @@
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+namespace Quests
+{
+    public class BaseQuest : MonoBehaviour
+    {
+        private void Refresh()
+        {
+            bool passed = true;
+            bool failed = false;
+            ExecuteEvents.Execute(gameObject, null, delegate(ICondition test, BaseEventData _)
+            {
+                if (!test.Passed) passed = false;
+                if (test.Failed) failed = true;
+            });
+            if (failed)
+            {
+                ExecuteEvents.Execute<IOutcome>(gameObject, null, FailEvent);
+                ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
+                ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
+            }
+            else if (passed)
+            {
+                ExecuteEvents.Execute<IOutcome>(gameObject, null, PassEvent);
+                ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
+                ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
+            }
+        }
+
+
+        public void Init()
+        {
+            ExecuteEvents.Execute<ICondition>(gameObject, null, InitEvent);
+            ExecuteEvents.Execute<IOutcome>(gameObject, null, PrepareEvent);
+        }
+
+
+        private static void FailEvent(IOutcome reward, BaseEventData _) => reward.Fail();
+        private static void PassEvent(IOutcome reward, BaseEventData _) => reward.Pass();
+        private static void PrepareEvent(IOutcome test, BaseEventData _) => test.Prepare();
+        private static void StopEvent(IOutcome test, BaseEventData _) => test.Stop();
+        private static void StopEvent(ICondition test, BaseEventData _) => test.Stop();
+        private void InitEvent(ICondition test, BaseEventData _) => test.Init(Refresh);
+    }
+}
