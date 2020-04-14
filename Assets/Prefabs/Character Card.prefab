@@ -313,8 +313,9 @@ GameObject:
   m_Component:
   - component: {fileID: 20246482016484917}
   - component: {fileID: 20246482016484916}
+  - component: {fileID: 8324127921374540034}
   m_Layer: 5
-  m_Name: Character View
+  m_Name: Character Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,3 +353,20 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &8324127921374540034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20246482016484914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ddd6b4b8054cd6a8f81337b1347ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_generator: {fileID: 11400000, guid: 5a0a28d5b130246b499b87d2df9aac48, type: 2}
+  m_tags: []
+  m_name: {fileID: 20246481256650295}
+  m_description: {fileID: 20246481825908261}
+  m_photo: {fileID: 20246480159347527}
