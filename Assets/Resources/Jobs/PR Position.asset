@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95e6deb8b2a94d67b8219190dc297ce1, type: 3}
-  m_Name: Manager Position
+  m_Name: PR Position
   m_EditorClassIdentifier: 
-  m_shownName: Manager
+  m_shownName: PR

@@ -9,6 +9,13 @@ namespace Character
         public event Action Hired = null;
         public event Action Skipped = null;
 
+
+        [SerializeField] private string m_shownName = null;
+
+
+        public string ShownName => m_shownName;
+
+
         public void Hire()
         {
             Hired?.Invoke();
