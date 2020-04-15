@@ -5,6 +5,15 @@ namespace Quests
 {
     public class BaseQuest : MonoBehaviour
     {
+        [SerializeField] private bool m_autoStart = false;
+
+
+        private void Start()
+        {
+            if (m_autoStart) Init();
+        }
+
+
         private void Refresh()
         {
             bool passed = true;
