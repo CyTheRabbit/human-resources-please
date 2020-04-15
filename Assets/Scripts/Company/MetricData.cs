@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Company
@@ -5,6 +6,9 @@ namespace Company
     [CreateAssetMenu(menuName = "Data/Company Metric")]
     public class MetricData : ScriptableObject
     {
+        public event Action Changed = null;
+
+
         [SerializeField] private MetricConfig m_config = null;
         [SerializeField] private CompanyEvents m_events = null;
         
@@ -19,6 +23,7 @@ namespace Company
             set
             {
                 currentValue = Mathf.Clamp01(value);
+                Changed?.Invoke();
                 m_events.OnMetricChanged();
                 if (currentValue <= 0.0f) m_events.OnMetricEmptied();
             }
