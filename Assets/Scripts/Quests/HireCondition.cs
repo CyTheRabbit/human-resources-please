@@ -4,15 +4,8 @@ using UnityEngine;
 
 namespace Quests
 {
-    public class HireCondition : MonoBehaviour, ICondition
+    public class HireCondition : BaseCondition
     {
-        private enum ConditionType
-        {
-            Pass,
-            Fail
-        }
-        
-        [SerializeField] private ConditionType m_type = ConditionType.Pass;
         [SerializeField] private JobPosition m_trackedJob = null;
         [SerializeField] private int m_requiredCount = 1;
 
@@ -21,10 +14,7 @@ namespace Quests
         private int employeeCount = 0;
 
 
-        private bool ReachedCount => employeeCount >= m_requiredCount;
-
-        public bool Passed => ReachedCount && m_type == ConditionType.Pass;
-        public bool Failed => ReachedCount && m_type == ConditionType.Fail;
+        protected override bool Done => employeeCount >= m_requiredCount;
 
 
         private void Increment()
@@ -34,14 +24,14 @@ namespace Quests
         }
 
         
-        public void Init(Action refresh)
+        public override void Init(Action refresh)
         {
             refreshAction = refresh;
             employeeCount = 0;
             m_trackedJob.Hired += Increment;
         }
 
-        public void Stop()
+        public override void Stop()
         {
             m_trackedJob.Hired -= Increment;
         }
