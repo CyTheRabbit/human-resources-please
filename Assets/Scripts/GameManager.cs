@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         
     private void ShowNextCard()
     {
+        if (!m_data.CanDispatch) return;
         GameObject card = m_data.CurrentCard;
         card.transform.SetParent(m_cardParent, false);
         ExecuteEvents.Execute<IViewable>(card, null, BaseView.RefreshEvent);
