@@ -10,7 +10,6 @@ namespace Quests
         [SerializeField] private int m_requiredCount = 1;
 
 
-        private Action refreshAction = null;
         private int employeeCount = 0;
 
 
@@ -20,13 +19,13 @@ namespace Quests
         private void Increment()
         {
             employeeCount++;
-            if (Passed) refreshAction();
+            if (Passed) Refresh();
         }
 
         
         public override void Init(Action refresh)
         {
-            refreshAction = refresh;
+            base.Init(refresh);
             employeeCount = 0;
             m_trackedJob.Hired += Increment;
         }

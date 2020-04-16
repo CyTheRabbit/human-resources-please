@@ -31,6 +31,7 @@ namespace Quests
 
         public override void Init(Action refreshAction)
         {
+            base.Init(refreshAction);
             m_metric.Changed += Test;
         }
 
