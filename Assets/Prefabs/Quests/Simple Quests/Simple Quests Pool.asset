@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786ba45e5414493b87a7ca437ed1cec7, type: 3}
+  m_Name: Simple Quests Pool
+  m_EditorClassIdentifier: 
+  m_quests:
+  - {fileID: 3616698003878769456, guid: 47f4f6a40789d4cad9df4540d9ec3269, type: 3}
