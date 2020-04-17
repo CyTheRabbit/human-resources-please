@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Quests
 {
-    [AddComponentMenu("Quest Conditions/Hire")]
+    [AddComponentMenu("Quest Conditions/Hire Condition")]
     public class HireCondition : BaseCondition
     {
         [SerializeField] private JobPosition m_trackedJob = null;
