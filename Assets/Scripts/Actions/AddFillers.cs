@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Actions
 {
+    [AddComponentMenu("Actions/Add Filler Cards")]
     public class AddFillers : BaseAction
     {
         [SerializeField] private FillerGenerator m_generator = null;
