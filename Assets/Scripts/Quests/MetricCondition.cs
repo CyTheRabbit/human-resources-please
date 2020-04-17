@@ -19,7 +19,8 @@ namespace Quests
 
 
         protected override bool Done =>
-            (m_comparison == ComparisonType.LessOrEqual && m_metric.Value <= m_threshold)
+            Mathf.Approximately(m_metric.Value, m_threshold)
+            || (m_comparison == ComparisonType.LessOrEqual && m_metric.Value <= m_threshold)
             || (m_comparison == ComparisonType.GreaterOrEqual && m_metric.Value >= m_threshold);
 
         
