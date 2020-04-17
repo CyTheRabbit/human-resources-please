@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3616698003878769456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3616698003878769457}
+  - component: {fileID: 3616698003878769420}
+  - component: {fileID: 3616698003878769423}
+  - component: {fileID: -5869479516111659359}
+  - component: {fileID: 3616698003878769422}
+  - component: {fileID: 2356670149643833593}
+  - component: {fileID: -3755991653446933572}
+  - component: {fileID: -2061278176948485723}
+  m_Layer: 0
+  m_Name: CEO Heir Quest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3616698003878769457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3616698003878769420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 157c98069d0e4725b569b7ec2e546fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_autoStart: 0
+--- !u!114 &3616698003878769423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723d8a2f983642479f785d95d5d90e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_generator: {fileID: 11400000, guid: b7f600a85a5404f168c64a5e6fe5bba5, type: 2}
+  m_count: 13
+--- !u!114 &-5869479516111659359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_cards:
+  - {fileID: 3710811360147135831, guid: 2c80fe45440e141bc9ccb48ba1a66237, type: 3}
+  m_rangeFrom: 0
+  m_rangeTo: 0
+--- !u!114 &3616698003878769422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_cards:
+  - {fileID: 6517675370550875438, guid: 4cfb7a478c50c4af7988997d39807265, type: 3}
+  m_rangeFrom: 4
+  m_rangeTo: 5
+--- !u!114 &2356670149643833593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_cards:
+  - {fileID: 8555279035671094352, guid: 10d5001954d7d449b94069ef788f5206, type: 3}
+  m_rangeFrom: 9
+  m_rangeTo: 11
+--- !u!114 &-3755991653446933572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa5401ca51f04cad8f1c37b9d7e2656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_type: 0
+  m_trackedJob: {fileID: 11400000, guid: c3d35ad020895491091ce4ad07f5b91e, type: 2}
+  m_requiredCount: 1
+--- !u!114 &-2061278176948485723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616698003878769456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 6
+  m_cards:
+  - {fileID: 6423463136339269048, guid: afe682a738e3f4428af0c803282240b5, type: 3}
+  m_rangeFrom: 0
+  m_rangeTo: 0

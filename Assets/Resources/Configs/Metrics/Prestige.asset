@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfadb25972b34439a7d82c2b9449ec0e, type: 3}
+  m_Name: Prestige
+  m_EditorClassIdentifier: 
+  m_name: Prestige
+  m_color: {r: 0.9882353, g: 0.16862746, b: 0.1764706, a: 1}
+  m_defaultValue: 0.5
+  m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}

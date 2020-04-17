@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f7b59fbe2df4d41b98b1ca5ff39112a, type: 3}
+  m_Name: Game
+  m_EditorClassIdentifier: 
+  m_gameCanvasPrefab: {fileID: 4594224249931964492, guid: 040919617354b4fd68195eea50c3a94f,
+    type: 3}
+  m_characterCardPrefab: {fileID: 20246482016484914, guid: 53b927029245749f6a0fb84e53ca8708,
+    type: 3}
+  m_swipeControllerPrefab: {fileID: 6691656939875179415, guid: 830dce260a7b04aa5b53847a9dd09cce,
+    type: 3}
+  m_companyUiPrefab: {fileID: 7640207512961097265, guid: 0609f582bb3734c9e93290ce38735b05,
+    type: 3}
+  m_companyConfig: {fileID: 11400000, guid: 4d7886d1c979543f39f09daca5192e80, type: 2}
+  m_generator: {fileID: 11400000, guid: ed7fe3ee3a6974c4e98491ee7e3b79e7, type: 2}
