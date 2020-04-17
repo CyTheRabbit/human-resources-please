@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 namespace Card
 {
+    [AddComponentMenu("Cards/Details Generator")]
     public class DetailsGenerator : MonoBehaviour, IViewable
     {
         [SerializeField] private GeneratorManager m_generator = null;

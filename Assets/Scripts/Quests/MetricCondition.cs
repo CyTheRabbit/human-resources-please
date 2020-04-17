@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Quests
 {
+    [AddComponentMenu("Quest Conditions/Metric")]
     public class MetricCondition : BaseCondition
     {
 

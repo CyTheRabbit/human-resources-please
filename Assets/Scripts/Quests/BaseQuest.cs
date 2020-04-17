@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace Quests
 {
+    [AddComponentMenu("Base Quest")]
     public class BaseQuest : MonoBehaviour
     {
         [SerializeField] private bool m_autoStart = false;

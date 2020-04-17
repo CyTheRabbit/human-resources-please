@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 namespace Card
 {
+    [AddComponentMenu("Cards/Employee Card")]
     public class EmployeeCard : MonoBehaviour, ISwipable
     {
         [SerializeField] private Text m_text = null;
