@@ -12,6 +12,7 @@ namespace Actions
 
         protected override void Act()
         {
+            Debug.Log($"Added {m_count} filler cards");
             m_generator.Generate(m_count);
         }
     }

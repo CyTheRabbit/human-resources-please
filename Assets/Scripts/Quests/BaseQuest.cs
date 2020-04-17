@@ -25,12 +25,14 @@ namespace Quests
             });
             if (failed)
             {
+                Debug.Log($"Quest \"{name}\" failed");
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, FailEvent);
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
             }
             else if (passed)
             {
+                Debug.Log($"Quest \"{name}\" completed");
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, PassEvent);
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);

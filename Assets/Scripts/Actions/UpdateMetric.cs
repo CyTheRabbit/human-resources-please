@@ -16,6 +16,7 @@ namespace Actions
 
         protected override void Act()
         {
+            Debug.Log($"Changed \"{m_metric.name}\" metric ({m_metric.Value:F2} -> {m_metric.Value + m_value:F2})");
             m_metric.Value += m_value;
         }
     }

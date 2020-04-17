@@ -8,6 +8,7 @@ namespace Actions
     {
         protected override void Act()
         {
+            Debug.Log("Reloaded game");
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex);
         }
