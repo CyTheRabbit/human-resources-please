@@ -46,6 +46,13 @@ namespace UI
             if (m_target != null) Target = m_target.GetComponent<RectTransform>();
         }
 
+        public void OnDestroy()
+        {
+            swipeOutAnimation.Finish();
+            cancelAnimation.Finish();
+        }
+
+
         private void UpdateRotationAnimated(float value)
         {
             float angle = (value - Rest_Tilt) * 2 * m_config.m_maxTiltAngle;
@@ -93,6 +100,7 @@ namespace UI
 
         public void ResetAnimations()
         {
+            if (transform == null) return;
             swipeOutAnimation.Cancel();
             cancelAnimation.Cancel();
             OnDragged(Rest_Tilt);
