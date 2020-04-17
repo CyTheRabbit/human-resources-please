@@ -14,6 +14,8 @@ public class DataManager : BaseManager
 
     private GameObject currentCard;
 
+    private bool canDispatch = true;
+
 
     public MetricData[] Metrics => m_metrics;
 
@@ -28,9 +30,16 @@ public class DataManager : BaseManager
         }
     }
 
+    public bool CanDispatch
+    {
+        get => canDispatch;
+        set => canDispatch = value;
+    }
+
 
     public override void Init()
     {
+        canDispatch = true;
         currentCard = null;
         foreach (MetricData metric in Metrics) metric.Init();
     }

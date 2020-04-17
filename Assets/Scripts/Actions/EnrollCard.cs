@@ -15,6 +15,7 @@ namespace Actions
         {
             foreach (GameObject prefab in m_cards)
             {
+                Debug.Log($"Added \"{prefab.name}\" card to queue");
                 GameObject card = Instantiate(prefab);
                 QueueUtils.EnrollAtRandomPosition(card, m_rangeFrom, m_rangeTo);
             }

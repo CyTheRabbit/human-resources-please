@@ -11,6 +11,7 @@ namespace Actions
 
         protected override void Act()
         {
+            Debug.Log($"Started quest \"{m_quest.name}\"");
             Transform quests = GameObject.FindWithTag("Quests").transform;
             BaseQuest quest = Instantiate(m_quest, quests, false).GetComponent<BaseQuest>();
             quest.Init();

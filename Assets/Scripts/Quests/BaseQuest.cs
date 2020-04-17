@@ -5,6 +5,15 @@ namespace Quests
 {
     public class BaseQuest : MonoBehaviour
     {
+        [SerializeField] private bool m_autoStart = false;
+
+
+        private void Start()
+        {
+            if (m_autoStart) Init();
+        }
+
+
         private void Refresh()
         {
             bool passed = true;
@@ -16,12 +25,14 @@ namespace Quests
             });
             if (failed)
             {
+                Debug.Log($"Quest \"{name}\" failed");
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, FailEvent);
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
             }
             else if (passed)
             {
+                Debug.Log($"Quest \"{name}\" completed");
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, PassEvent);
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);

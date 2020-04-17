@@ -14,10 +14,16 @@ namespace Company
         
         private readonly List<View<MetricData>> metrics = new List<View<MetricData>>();
 
-        public void Awake()
+        public void Start()
         {
             Init(m_model);
         }
+
+        private void OnDestroy()
+        {
+            m_events.Company.MetricChanged -= Refresh;
+        }
+
 
         public override void Init(CompanyData model)
         {
