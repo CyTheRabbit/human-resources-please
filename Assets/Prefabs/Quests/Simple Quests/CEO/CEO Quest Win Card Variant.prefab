@@ -1,20 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4999574230693985168
+--- !u!114 &-7138509287690698161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487600327715067267}
+  m_GameObject: {fileID: 6423463136339269048}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0121467293f4c898eb1552dbee4e5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_trigger: 3
+  m_trigger: 5
   m_questPool: {fileID: 11400000, guid: da04b647732114bfbacb3d208ecc7f4e, type: 2}
---- !u!1001 &8928844995290299937
+--- !u!1001 &8702518706124029466
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -24,16 +24,15 @@ PrefabInstance:
     - target: {fileID: 2441293046091312034, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
       propertyPath: m_Name
-      value: Win Card
+      value: CEO Quest Win Card Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5647476474917930992, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
       propertyPath: m_Text
-      value: 'Great job, <NONAME_HR>!
+      value: 'Nice job, I guess...
 
-
-        Thanks to your hard work we''re now
-        able to maintain our business efficiently.'
+        Anyway, it''s none of my business, I
+        retire now. Bye, cruel tech industry!'
       objectReference: {fileID: 0}
     - target: {fileID: 6338870399954931911, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
@@ -142,9 +141,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945189d1b59fd4f7092149c63371fd1e, type: 3}
---- !u!1 &6487600327715067267 stripped
+--- !u!1 &6423463136339269048 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2441293046091312034, guid: 945189d1b59fd4f7092149c63371fd1e,
     type: 3}
-  m_PrefabInstance: {fileID: 8928844995290299937}
+  m_PrefabInstance: {fileID: 8702518706124029466}
   m_PrefabAsset: {fileID: 0}
