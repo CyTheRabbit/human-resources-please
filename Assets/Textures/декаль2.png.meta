@@ -116,6 +116,9 @@ TextureImporter:
   - first:
       213: -893671712759775684
     second: "\u0434\u0435\u043A\u0430\u043B\u044C2_37"
+  - first:
+      213: 9163022519058275488
+    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_38"
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1005,6 +1008,27 @@ TextureImporter:
       bones: []
       spriteID: c3e7327ef4a0993f0800000000000000
       internalID: -893671712759775684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_38"
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 855
+        width: 557
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 7, y: 45, z: 8, w: 39}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac9f5dee68992f70800000000000000
+      internalID: 9163022519058275488
       vertices: []
       indices: 
       edges: []
