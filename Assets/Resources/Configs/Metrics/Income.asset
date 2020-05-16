@@ -15,4 +15,8 @@ MonoBehaviour:
   m_name: Income
   m_color: {r: 0.0627451, g: 0.41960785, b: 1, a: 1}
   m_defaultValue: 0.5
+  m_emptyImage: {fileID: 5395377142868377308, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
+  m_fullImage: {fileID: 425617502454222690, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
   m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}

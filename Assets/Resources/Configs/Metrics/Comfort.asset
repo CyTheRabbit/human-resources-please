@@ -15,4 +15,8 @@ MonoBehaviour:
   m_name: Comfort
   m_color: {r: 0.1882353, g: 0.827451, b: 0.23137255, a: 1}
   m_defaultValue: 0.5
+  m_emptyImage: {fileID: -2155206007643217366, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
+  m_fullImage: {fileID: -2218266108001503317, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
   m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}

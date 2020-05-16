@@ -15,4 +15,8 @@ MonoBehaviour:
   m_name: Prestige
   m_color: {r: 0.9882353, g: 0.16862746, b: 0.1764706, a: 1}
   m_defaultValue: 0.5
+  m_emptyImage: {fileID: 3356003220411917268, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
+  m_fullImage: {fileID: -893671712759775684, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
   m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}
