@@ -8,6 +8,7 @@ namespace Company
     public class MetricView : View<MetricData>
     {
         [SerializeField] private Image m_valueBar = null;
+        [SerializeField] private Image m_valueBkg = null;
         [SerializeField] private Text m_name = null;
 
         private PropertyAnimation fillAnimation = null;
@@ -19,7 +20,8 @@ namespace Company
             fillAnimation = new PropertyAnimation(this, model.Config.m_barFill, SetFill) 
                 {EndValue = 0, StartValue = 0};
 
-            m_valueBar.color = Model.Config.m_color;
+            m_valueBar.sprite = model.Config.m_fullImage;
+            m_valueBkg.sprite = model.Config.m_emptyImage;
             m_name.text = Model.Config.m_name;
             Refresh();
         }

@@ -15,4 +15,8 @@ MonoBehaviour:
   m_name: Capacity
   m_color: {r: 0.99607843, g: 0.8117647, b: 0.05882353, a: 1}
   m_defaultValue: 0.5
+  m_emptyImage: {fileID: -6366138392724416366, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
+  m_fullImage: {fileID: -1473615629868386221, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13,
+    type: 3}
   m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}
