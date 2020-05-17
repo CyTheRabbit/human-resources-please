@@ -20,7 +20,7 @@ namespace Card
         {
             m_name.text = m_generator.GenerateName(m_tags);
             m_description.text = m_generator.GenerateDescription(m_tags);
-            // m_photo.sprite = m_generator.GeneratePhoto(m_tags);
+            m_photo.sprite = m_generator.GeneratePhoto(m_tags);
         }
 
 

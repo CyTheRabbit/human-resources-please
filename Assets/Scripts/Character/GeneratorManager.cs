@@ -25,7 +25,7 @@ namespace Character
 
         public Sprite GeneratePhoto(string[] tags)
         {
-            throw new System.NotImplementedException();
+            return Utils.PickRandom(m_configs.Photos);
         }
     }
 }

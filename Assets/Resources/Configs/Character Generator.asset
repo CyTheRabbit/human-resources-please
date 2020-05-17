@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9595eb354f84b49b17c6861e4190910, type: 3}
   m_Name: Character Generator
   m_EditorClassIdentifier: 
-  m_archetypes:
-  - {fileID: 11400000, guid: 9705197ece84547aca9f926e028f842a, type: 2}
-  - {fileID: 11400000, guid: f75654d37767149158056dc4ffdf036b, type: 2}
   m_names:
   - Phil Gud
   - Ben Heer
@@ -28,20 +25,21 @@ MonoBehaviour:
   - '-'
   - +
   - '-'
-  m_changes:
-  - m_config: {fileID: 11400000, guid: 7ed2f5dd03a324575a4f7231f3a397dc, type: 2}
-    m_valueChange: 0.2
-  - m_config: {fileID: 11400000, guid: 7ed2f5dd03a324575a4f7231f3a397dc, type: 2}
-    m_valueChange: -0.3
-  - m_config: {fileID: 11400000, guid: 5cf98c7f983184ea39f62652b40975bc, type: 2}
-    m_valueChange: 0.3
-  - m_config: {fileID: 11400000, guid: 5cf98c7f983184ea39f62652b40975bc, type: 2}
-    m_valueChange: -0.4
-  - m_config: {fileID: 11400000, guid: 1013565e4259b4026808ad5410d0fdee, type: 2}
-    m_valueChange: 0.1
-  - m_config: {fileID: 11400000, guid: 1013565e4259b4026808ad5410d0fdee, type: 2}
-    m_valueChange: -0.1
-  - m_config: {fileID: 11400000, guid: bf1472253e37642bba4ba04a88186759, type: 2}
-    m_valueChange: 0.2
-  - m_config: {fileID: 11400000, guid: bf1472253e37642bba4ba04a88186759, type: 2}
-    m_valueChange: -0.2
+  m_photos:
+  - {fileID: 1227053316160970644, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -2269566136432192386, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -5434758386355800690, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -7844119716362875419, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 2854878722858428844, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 6531792556803446918, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 2858542254089018267, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -6603013158847529504, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -1893628815305423010, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 118526863888595246, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 4050833243231428397, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -3288557308725906883, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 8539355748868077296, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: 3467820149198883204, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -5347771351391858697, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -5347771351391858697, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
+  - {fileID: -5141388313967957824, guid: 3d7f2bb4e5aa0244ca32cabd4ad5bb13, type: 3}
