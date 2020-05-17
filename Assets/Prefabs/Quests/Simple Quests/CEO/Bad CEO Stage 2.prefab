@@ -13,6 +13,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6614335600280990476, guid: 4782efe0dc66043b286634266e7ef0c0,
         type: 3}
+    - target: {fileID: 4924758346459761010, guid: 4cfb7a478c50c4af7988997d39807265,
+        type: 3}
+      propertyPath: m_Name
+      value: Bad CEO Stage 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924758346654527845, guid: 4cfb7a478c50c4af7988997d39807265,
+        type: 3}
+      propertyPath: m_Text
+      value: 'oh come on, man! i will be real good executive, trust me dude! i can
+        learn ceo stuff from some videos on MePipe!
+
+        pleease, hire me! swipe
+        right!!!!1'
+      objectReference: {fileID: 0}
     - target: {fileID: 6517675370550875433, guid: 4cfb7a478c50c4af7988997d39807265,
         type: 3}
       propertyPath: m_LocalPosition.x
