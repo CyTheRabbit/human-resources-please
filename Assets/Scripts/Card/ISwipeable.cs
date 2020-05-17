@@ -6,5 +6,7 @@ namespace Card
     {
         void SwipeLeft();
         void SwipeRight();
+        void Reveal();
+        void SwipeStart();
     }
 }

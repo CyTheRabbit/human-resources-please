@@ -19,6 +19,15 @@ public class GameManager : MonoBehaviour
         Init();
     }
 
+    private static void RevealEvent(ISwipable card, BaseEventData _)
+    {
+        card.Reveal();
+    }
+
+    private void SwipeStartEvent(ISwipable card, BaseEventData _)
+    {
+        card.SwipeStart();
+    }
 
     private static void SwipeLeftEvent(ISwipable card, BaseEventData _)
     {
@@ -38,6 +47,7 @@ public class GameManager : MonoBehaviour
         card.transform.SetParent(m_cardParent, false);
         ExecuteEvents.Execute<IViewable>(card, null, BaseView.RefreshEvent);
         ExecuteEvents.Execute<IViewable>(card, null, BaseView.ShowEvent);
+        ExecuteEvents.Execute<ISwipable>(card, null, RevealEvent);
         m_swipeAnimator.ResetAnimations();
     }
 
@@ -48,6 +58,11 @@ public class GameManager : MonoBehaviour
         Destroy(card);
     }
     
+    private void OnSwipeStarted()
+    {
+        ExecuteEvents.Execute<ISwipable>(m_data.CurrentCard, null, SwipeStartEvent);
+    }
+
     private void OnSwipeLeft()
     {
         ExecuteEvents.Execute<ISwipable>(m_data.CurrentCard, null, SwipeLeftEvent);
@@ -66,6 +81,8 @@ public class GameManager : MonoBehaviour
         m_swipeAnimator.Init();
         m_swipeAnimator.Target = m_cardParent;
         m_swipeAnimator.SwipedOutLeft += OnSwipeLeft;
+        m_swipeController.SwipedLeft += OnSwipeStarted;
+        m_swipeController.SwipedRight += OnSwipeStarted;
         m_swipeAnimator.SwipedOutRight += OnSwipeRight;
         
         m_events.Queue.BeforeCardChanged += HidePrevCard;

@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4046641289169795000}
   - component: {fileID: 8057150585805522973}
+  - component: {fileID: 3744959858489220285}
   - component: {fileID: 5634435052798397662}
   m_Layer: 5
   m_Name: Game Over Card
@@ -202,6 +203,21 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &3744959858489220285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5634435052798397661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b97aa94dac4ceb9f30e2e306f10d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 8
+  m_data: {fileID: 11400000, guid: 2418114ded350443b922a080ab282cd9, type: 2}
+  m_events: {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
 --- !u!114 &5634435052798397662
 MonoBehaviour:
   m_ObjectHideFlags: 0

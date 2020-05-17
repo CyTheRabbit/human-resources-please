@@ -17,7 +17,10 @@ namespace Actions
             PrepareQuest,
             StopQuest,
             PassQuest,
-            FailQuest
+            FailQuest,
+            
+            RevealCard,
+            SwipeStart
         }
 
         [SerializeField] private TriggerEvent m_trigger = TriggerEvent.None;
@@ -25,6 +28,16 @@ namespace Actions
         protected abstract void Act();
 
         #region Event Handlers
+
+        public void Reveal()
+        {
+            if (m_trigger == TriggerEvent.RevealCard) Act();
+        }
+
+        public void SwipeStart()
+        {
+            if (m_trigger == TriggerEvent.SwipeStart) Act();
+        }
         
         public void SwipeLeft()
         {

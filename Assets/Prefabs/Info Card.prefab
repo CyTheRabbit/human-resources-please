@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6338870399954931911}
   - component: {fileID: 1412263778}
+  - component: {fileID: 900661859919992325}
   m_Layer: 5
   m_Name: Info Card
   m_TagString: Untagged
@@ -49,6 +50,20 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &900661859919992325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2441293046091312034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 495f5800c46f4baa87625c72ccbf05b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 8
+  m_sound: {fileID: 8300000, guid: e30fab717e5772947aec45094220b77c, type: 3}
 --- !u!1 &7673164058425119384
 GameObject:
   m_ObjectHideFlags: 0

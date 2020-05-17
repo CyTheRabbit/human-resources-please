@@ -27,5 +27,13 @@ namespace Card
         {
             m_position.Hire();
         }
+
+        public void Reveal()
+        {
+        }
+
+        public void SwipeStart()
+        {
+        }
     }
 }
