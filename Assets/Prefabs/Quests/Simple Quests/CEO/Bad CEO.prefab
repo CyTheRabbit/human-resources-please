@@ -56,7 +56,8 @@ PrefabInstance:
       value: 'Well... Yeah, dude, like I want this job at your company so badly you
         can not imagine it.
 
-        I have no experience, but I like'
+        I have no experience, but I would love to become
+        CEO!'
       objectReference: {fileID: 0}
     - target: {fileID: 20246482016484914, guid: 7dbd1210c95ee48e089dca134b29c916,
         type: 3}
