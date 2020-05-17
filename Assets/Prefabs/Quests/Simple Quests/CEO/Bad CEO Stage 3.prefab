@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 2
   m_metric: {fileID: 11400000, guid: c86523ddaa42a4e0789573f1a38c4168, type: 2}
-  m_value: 0.2
+  m_value: 0.1
 --- !u!1001 &4869878116492861545
 PrefabInstance:
   m_ObjectHideFlags: 0
