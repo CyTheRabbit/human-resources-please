@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 786ba45e5414493b87a7ca437ed1cec7, type: 3}
-  m_Name: Simple Quests Pool
+  m_Script: {fileID: 11500000, guid: dfadb25972b34439a7d82c2b9449ec0e, type: 3}
+  m_Name: Control
   m_EditorClassIdentifier: 
-  m_quests:
-  - {fileID: 3616698003878769456, guid: 47f4f6a40789d4cad9df4540d9ec3269, type: 3}
-  - {fileID: 6011460240242811559, guid: 4d6baf5736e7ccf4a9136f35b3171b31, type: 3}
+  m_name: Control
+  m_color: {r: 0.99607843, g: 0.8117647, b: 0.05882353, a: 1}
+  m_defaultValue: 0.5
+  m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}

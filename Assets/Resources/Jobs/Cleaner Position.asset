@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfadb25972b34439a7d82c2b9449ec0e, type: 3}
-  m_Name: Capacity
+  m_Script: {fileID: 11500000, guid: 95e6deb8b2a94d67b8219190dc297ce1, type: 3}
+  m_Name: Cleaner Position
   m_EditorClassIdentifier: 
-  m_name: Capacity
-  m_color: {r: 0.99607843, g: 0.8117647, b: 0.05882353, a: 1}
-  m_defaultValue: 0.5
-  m_barFill: {fileID: 11400000, guid: 7c2e591316131416da70071fe468436b, type: 2}
+  m_shownName: 'Cleaner '

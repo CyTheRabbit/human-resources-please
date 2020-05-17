@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 786ba45e5414493b87a7ca437ed1cec7, type: 3}
-  m_Name: Simple Quests Pool
+  m_Script: {fileID: 11500000, guid: 95e6deb8b2a94d67b8219190dc297ce1, type: 3}
+  m_Name: Designer Position
   m_EditorClassIdentifier: 
-  m_quests:
-  - {fileID: 3616698003878769456, guid: 47f4f6a40789d4cad9df4540d9ec3269, type: 3}
-  - {fileID: 6011460240242811559, guid: 4d6baf5736e7ccf4a9136f35b3171b31, type: 3}
+  m_shownName: Designer

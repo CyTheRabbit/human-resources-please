@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9175411654042808959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9175411654042808952}
+  - component: {fileID: 9175411654042808953}
+  - component: {fileID: 1030548283339134028}
+  - component: {fileID: 2039573210020993514}
+  - component: {fileID: 9175411654042808958}
+  - component: {fileID: 4420377211737896490}
+  - component: {fileID: 8862874081559200411}
+  m_Layer: 0
+  m_Name: Designer's Quest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9175411654042808952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9175411654042808953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 157c98069d0e4725b569b7ec2e546fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_autoStart: 0
+--- !u!114 &1030548283339134028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723d8a2f983642479f785d95d5d90e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_generator: {fileID: 11400000, guid: b7f600a85a5404f168c64a5e6fe5bba5, type: 2}
+  m_count: 20
+--- !u!114 &2039573210020993514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_cards:
+  - {fileID: 1709064603856417106, guid: 3971fdd8c317c1b48b3617f10bc59a25, type: 3}
+  - {fileID: 1709064603856417106, guid: 68fddeb414b2e2944a26e0bf9b12e35e, type: 3}
+  - {fileID: 1709064603856417106, guid: 3971fdd8c317c1b48b3617f10bc59a25, type: 3}
+  m_rangeFrom: 3
+  m_rangeTo: 100
+--- !u!114 &9175411654042808958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa5401ca51f04cad8f1c37b9d7e2656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_type: 0
+  m_trackedJob: {fileID: 11400000, guid: a2e7472591a189d4493e8b43cb3fccf9, type: 2}
+  m_requiredCount: 3
+--- !u!114 &4420377211737896490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 6
+  m_cards:
+  - {fileID: 6487600327715067267, guid: a316f009c7b4ecc4e949fcad6226da2b, type: 3}
+  m_rangeFrom: 0
+  m_rangeTo: 0
+--- !u!114 &8862874081559200411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175411654042808959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 4
+  m_cards:
+  - {fileID: 4302827003567641037, guid: 14aac57a9e8b7c04590e969c5b03b4af, type: 3}
+  m_rangeFrom: 0
+  m_rangeTo: 0
