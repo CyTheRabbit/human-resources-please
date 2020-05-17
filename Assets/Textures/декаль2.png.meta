@@ -4,121 +4,121 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1227053316160970644
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_0"
+    second: photo_1
   - first:
       213: -2269566136432192386
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_1"
+    second: photo_2
   - first:
       213: -5434758386355800690
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_2"
+    second: photo_3
   - first:
       213: -7844119716362875419
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_3"
+    second: photo_4
   - first:
       213: 2854878722858428844
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_4"
+    second: photo_5
   - first:
       213: 6531792556803446918
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_5"
+    second: photo_6
   - first:
       213: 2858542254089018267
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_6"
+    second: photo_7
   - first:
       213: -6603013158847529504
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_7"
+    second: photo_8
   - first:
       213: -1893628815305423010
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_8"
+    second: photo_9
   - first:
       213: 118526863888595246
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_9"
+    second: photo_10
   - first:
       213: 4050833243231428397
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_10"
+    second: photo_11
   - first:
       213: -3288557308725906883
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_11"
+    second: photo_12
   - first:
       213: -2800816662497386877
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_12"
+    second: photo_17
   - first:
       213: 4038272854161440048
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_13"
+    second: photo_18
   - first:
       213: -5141388313967957824
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_14"
+    second: photo_19
   - first:
       213: -8466645172072628794
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_15"
+    second: photo_20
   - first:
       213: -5347771351391858697
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_16"
+    second: photo_16
   - first:
       213: 6502815303950250597
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_17"
+    second: photo_15
   - first:
       213: 3467820149198883204
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_18"
+    second: photo_14
   - first:
       213: 8539355748868077296
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_19"
+    second: photo_13
   - first:
       213: 6251945440398649564
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_20"
+    second: background_01
   - first:
       213: 1886029840593366580
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_21"
+    second: quest_status_open
   - first:
       213: -2587789894235693006
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_22"
+    second: quest_status_pass
   - first:
       213: 5621845246563062468
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_23"
+    second: quest_status_fail
   - first:
       213: 3139474361685974578
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_24"
+    second: paper_panel
   - first:
       213: 7892842730998151944
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_25"
+    second: quests
   - first:
       213: -8466704438270989124
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_26"
+    second: pause
   - first:
       213: 1307912139120028856
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_27"
+    second: decor_1
   - first:
       213: 9075523401537241535
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_28"
+    second: resume_panel
   - first:
       213: 6777288639050323384
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_29"
+    second: pen
   - first:
       213: -6366138392724416366
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_30"
+    second: control_bkg
   - first:
       213: -2155206007643217366
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_31"
+    second: comfort_bkg
   - first:
       213: 5395377142868377308
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_32"
+    second: income_bkg
   - first:
       213: 3356003220411917268
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_33"
+    second: prestige_bkg
   - first:
       213: -1473615629868386221
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_34"
+    second: control_bar
   - first:
       213: -2218266108001503317
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_35"
+    second: comfort_bar
   - first:
       213: 425617502454222690
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_36"
+    second: income_bar
   - first:
       213: -893671712759775684
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_37"
+    second: prestige_bar
   - first:
       213: 9163022519058275488
-    second: "\u0434\u0435\u043A\u0430\u043B\u044C2_38"
+    second: window_panel
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -215,7 +215,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_0"
+      name: photo_1
       rect:
         serializedVersion: 2
         x: 1
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_1"
+      name: photo_2
       rect:
         serializedVersion: 2
         x: 129
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_2"
+      name: photo_3
       rect:
         serializedVersion: 2
         x: 256
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_3"
+      name: photo_4
       rect:
         serializedVersion: 2
         x: 384
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_4"
+      name: photo_5
       rect:
         serializedVersion: 2
         x: 512
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_5"
+      name: photo_6
       rect:
         serializedVersion: 2
         x: 640
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_6"
+      name: photo_7
       rect:
         serializedVersion: 2
         x: 768
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_7"
+      name: photo_8
       rect:
         serializedVersion: 2
         x: 896
@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_8"
+      name: photo_9
       rect:
         serializedVersion: 2
         x: 1024
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_9"
+      name: photo_10
       rect:
         serializedVersion: 2
         x: 1152
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_10"
+      name: photo_11
       rect:
         serializedVersion: 2
         x: 1280
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_11"
+      name: photo_12
       rect:
         serializedVersion: 2
         x: 1408
@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_12"
+      name: photo_17
       rect:
         serializedVersion: 2
         x: 1535
@@ -488,7 +488,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_13"
+      name: photo_18
       rect:
         serializedVersion: 2
         x: 1664
@@ -509,7 +509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_14"
+      name: photo_19
       rect:
         serializedVersion: 2
         x: 1791
@@ -530,7 +530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_15"
+      name: photo_20
       rect:
         serializedVersion: 2
         x: 1920
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_16"
+      name: photo_16
       rect:
         serializedVersion: 2
         x: 1919
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_17"
+      name: photo_15
       rect:
         serializedVersion: 2
         x: 1791
@@ -593,7 +593,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_18"
+      name: photo_14
       rect:
         serializedVersion: 2
         x: 1663
@@ -614,7 +614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_19"
+      name: photo_13
       rect:
         serializedVersion: 2
         x: 1536
@@ -635,7 +635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_20"
+      name: background_01
       rect:
         serializedVersion: 2
         x: 881
@@ -656,7 +656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_21"
+      name: quest_status_open
       rect:
         serializedVersion: 2
         x: 801
@@ -677,7 +677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_22"
+      name: quest_status_pass
       rect:
         serializedVersion: 2
         x: 797
@@ -698,7 +698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_23"
+      name: quest_status_fail
       rect:
         serializedVersion: 2
         x: 796
@@ -719,7 +719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_24"
+      name: paper_panel
       rect:
         serializedVersion: 2
         x: 284
@@ -740,7 +740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_25"
+      name: quests
       rect:
         serializedVersion: 2
         x: 136
@@ -761,7 +761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_26"
+      name: pause
       rect:
         serializedVersion: 2
         x: 8
@@ -782,7 +782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_27"
+      name: decor_1
       rect:
         serializedVersion: 2
         x: 364
@@ -803,7 +803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_28"
+      name: resume_panel
       rect:
         serializedVersion: 2
         x: 187
@@ -824,7 +824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_29"
+      name: pen
       rect:
         serializedVersion: 2
         x: 760
@@ -845,7 +845,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_30"
+      name: control_bkg
       rect:
         serializedVersion: 2
         x: 1404
@@ -866,7 +866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_31"
+      name: comfort_bkg
       rect:
         serializedVersion: 2
         x: 1622
@@ -887,7 +887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_32"
+      name: income_bkg
       rect:
         serializedVersion: 2
         x: 1827
@@ -908,7 +908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_33"
+      name: prestige_bkg
       rect:
         serializedVersion: 2
         x: 1535
@@ -929,7 +929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_34"
+      name: control_bar
       rect:
         serializedVersion: 2
         x: 1400
@@ -950,7 +950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_35"
+      name: comfort_bar
       rect:
         serializedVersion: 2
         x: 1617
@@ -971,7 +971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_36"
+      name: income_bar
       rect:
         serializedVersion: 2
         x: 1829
@@ -992,7 +992,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_37"
+      name: prestige_bar
       rect:
         serializedVersion: 2
         x: 1722
@@ -1013,7 +1013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0434\u0435\u043A\u0430\u043B\u044C2_38"
+      name: window_panel
       rect:
         serializedVersion: 2
         x: 1440
@@ -1021,7 +1021,7 @@ TextureImporter:
         width: 557
         height: 504
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 7, y: 45, z: 8, w: 39}
       outline: []
       physicsShape: []
