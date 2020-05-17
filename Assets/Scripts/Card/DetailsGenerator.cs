@@ -18,9 +18,9 @@ namespace Card
 
         private void GenerateDetails()
         {
-            m_name.text = m_generator.GenerateName(m_tags);
-            m_description.text = m_generator.GenerateDescription(m_tags);
-            m_photo.sprite = m_generator.GeneratePhoto(m_tags);
+            if (m_name != null) m_name.text = m_generator.GenerateName(m_tags);
+            if (m_description != null) m_description.text = m_generator.GenerateDescription(m_tags);
+            if (m_photo != null) m_photo.sprite = m_generator.GeneratePhoto(m_tags);
         }
 
 
