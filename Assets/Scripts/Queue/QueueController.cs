@@ -31,7 +31,7 @@ namespace Queue
                 return;
             }
             GameObject nextCard = transform.GetChild(0).gameObject;
-            if (transform.childCount == 0)
+            if (transform.childCount == 1)
             {
                 m_events.Queue.OnQueueEmptied();
             }
