@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 4
   m_cards:
-  - {fileID: 6517675370550875438, guid: 4cfb7a478c50c4af7988997d39807265, type: 3}
+  - {fileID: 4924758346459761010, guid: 4cfb7a478c50c4af7988997d39807265, type: 3}
   m_rangeFrom: 4
   m_rangeTo: 5
 --- !u!114 &2356670149643833593
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 4
   m_cards:
-  - {fileID: 8555279035671094352, guid: 10d5001954d7d449b94069ef788f5206, type: 3}
+  - {fileID: 5345171022521958250, guid: 10d5001954d7d449b94069ef788f5206, type: 3}
   m_rangeFrom: 9
   m_rangeTo: 11
 --- !u!114 &-3755991653446933572
