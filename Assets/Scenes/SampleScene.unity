@@ -428,6 +428,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &512643125 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5517775024888788589, guid: 744bec25574de4e25b6b5f18121d2e14,
+    type: 3}
+  m_PrefabInstance: {fileID: 5076010571423540795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &533135968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1058,6 +1064,81 @@ Transform:
   m_Father: {fileID: 1341510549}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1546944371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 512643125}
+    m_Modifications:
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808952, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175411654042808958, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_trackedJob
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c6f9a918cf756240856759a8d64e25c,
+        type: 2}
+    - target: {fileID: 9175411654042808959, guid: c9b2b0d902b786b489f9704400e8b563,
+        type: 3}
+      propertyPath: m_Name
+      value: Barista's Quest
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c9b2b0d902b786b489f9704400e8b563, type: 3}
 --- !u!1 &1567556147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5440717848270074689, guid: 744bec25574de4e25b6b5f18121d2e14,
