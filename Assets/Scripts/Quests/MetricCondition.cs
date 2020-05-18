@@ -19,6 +19,12 @@ namespace Quests
         [SerializeField] private ComparisonType m_comparison = ComparisonType.LessOrEqual;
 
 
+        private void OnDisable()
+        {
+            m_metric.Changed -= Test;
+        }
+
+
         protected override bool Done =>
             Mathf.Approximately(m_metric.Value, m_threshold)
             || (m_comparison == ComparisonType.LessOrEqual && m_metric.Value <= m_threshold)
@@ -39,7 +45,7 @@ namespace Quests
 
         public override void Stop()
         {
-            m_metric.Changed -= Test;
+            enabled = false;
         }
     }
 }
