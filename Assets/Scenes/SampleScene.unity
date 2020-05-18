@@ -1064,7 +1064,6 @@ Transform:
   m_Father: {fileID: 1341510549}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1001 &1546944371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1231,8 +1230,6 @@ MonoBehaviour:
   m_events: {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
   m_filler: {fileID: 11400000, guid: b7f600a85a5404f168c64a5e6fe5bba5, type: 2}
   m_refillCount: 10
-=======
->>>>>>> 45f0c1f6ffedf6dfc94a57c6a6ec1ac5093d9666
 --- !u!1 &2043216717
 GameObject:
   m_ObjectHideFlags: 0
