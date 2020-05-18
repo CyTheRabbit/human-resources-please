@@ -7,4 +7,14 @@ public static class Utils
     {
         return elements[Random.Range(0, elements.Count)];
     }
+
+    public static IList<T> Shuffle<T>(IList<T> elements)
+    {
+        for (int i = 0; i < elements.Count; i++)
+        {
+            int j = Random.Range(i, elements.Count);
+            (elements[i], elements[j]) = (elements[j], elements[i]);
+        }
+        return elements;
+    }
 }

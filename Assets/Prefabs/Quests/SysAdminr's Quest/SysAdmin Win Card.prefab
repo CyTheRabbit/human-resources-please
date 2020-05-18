@@ -24,7 +24,7 @@ PrefabInstance:
     - target: {fileID: 2441293046091312034, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
       propertyPath: m_Name
-      value: Win Card
+      value: SysAdmin Win Card
       objectReference: {fileID: 0}
     - target: {fileID: 3606885330241676726, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
@@ -40,12 +40,9 @@ PrefabInstance:
     - target: {fileID: 5647476474917930992, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
       propertyPath: m_Text
-      value: 'Great job, <NONAME_HR>!
-
-
-        Now when we have some designers we
-        will make custom designs for our applications. And I think that people for
-        the prize, can design my future residence.'
+      value: The servers are saved, now we don't have to call Satan and sell our
+        soul. I mean, deal with it ourselves. You're a real talent. I think you can
+        apply for a promotion in the future.
       objectReference: {fileID: 0}
     - target: {fileID: 5647476474917930992, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}

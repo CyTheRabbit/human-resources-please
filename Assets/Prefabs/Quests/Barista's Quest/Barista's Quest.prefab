@@ -79,6 +79,8 @@ MonoBehaviour:
   m_trigger: 4
   m_cards:
   - {fileID: 138856934189717977, guid: 93f74a106d8791444afce8a8789bb1d7, type: 3}
+  - {fileID: 138856934189717977, guid: 93f74a106d8791444afce8a8789bb1d7, type: 3}
+  - {fileID: 138856934189717977, guid: 93f74a106d8791444afce8a8789bb1d7, type: 3}
   m_rangeFrom: 3
   m_rangeTo: 100
 --- !u!114 &9175411654042808958
@@ -94,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_type: 0
-  m_trackedJob: {fileID: 11400000, guid: a2e7472591a189d4493e8b43cb3fccf9, type: 2}
+  m_trackedJob: {fileID: 11400000, guid: 5c6f9a918cf756240856759a8d64e25c, type: 2}
   m_requiredCount: 3
 --- !u!114 &4420377211737896490
 MonoBehaviour:
