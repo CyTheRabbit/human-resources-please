@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_type: 0
   m_trackedJob: {fileID: 11400000, guid: 5c6f9a918cf756240856759a8d64e25c, type: 2}
-  m_requiredCount: 3
+  m_requiredCount: 1
 --- !u!114 &4420377211737896490
 MonoBehaviour:
   m_ObjectHideFlags: 0
