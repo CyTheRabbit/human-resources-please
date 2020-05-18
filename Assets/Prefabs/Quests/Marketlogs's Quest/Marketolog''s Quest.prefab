@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4420377211737896490}
   - component: {fileID: 8862874081559200411}
   m_Layer: 0
-  m_Name: Designer's Quest
+  m_Name: Marketolog''s Quest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157c98069d0e4725b569b7ec2e546fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_autoStart: 0
+  m_autoStart: 1
 --- !u!114 &1030548283339134028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,9 +78,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 4
   m_cards:
+  - {fileID: 6412576857485246363, guid: 514367f076cd9a74ea6513b656b0f47a, type: 3}
+  - {fileID: 6412576857485246363, guid: 514367f076cd9a74ea6513b656b0f47a, type: 3}
+  - {fileID: 6412576857485246363, guid: b8afed24ed19d014e97d3ebb974c3ad5, type: 3}
+  - {fileID: 6412576857485246363, guid: b8afed24ed19d014e97d3ebb974c3ad5, type: 3}
   - {fileID: 1709064603856417106, guid: 3971fdd8c317c1b48b3617f10bc59a25, type: 3}
-  - {fileID: 1709064603856417106, guid: 68fddeb414b2e2944a26e0bf9b12e35e, type: 3}
-  - {fileID: 1709064603856417106, guid: 3971fdd8c317c1b48b3617f10bc59a25, type: 3}
+  - {fileID: 6412576857485246363, guid: b8afed24ed19d014e97d3ebb974c3ad5, type: 3}
+  - {fileID: 6412576857485246363, guid: b8afed24ed19d014e97d3ebb974c3ad5, type: 3}
+  - {fileID: 6412576857485246363, guid: b8afed24ed19d014e97d3ebb974c3ad5, type: 3}
+  - {fileID: 6412576857485246363, guid: 514367f076cd9a74ea6513b656b0f47a, type: 3}
+  - {fileID: 6412576857485246363, guid: 514367f076cd9a74ea6513b656b0f47a, type: 3}
   m_rangeFrom: 3
   m_rangeTo: 100
 --- !u!114 &9175411654042808958
@@ -96,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_type: 0
-  m_trackedJob: {fileID: 11400000, guid: a2e7472591a189d4493e8b43cb3fccf9, type: 2}
-  m_requiredCount: 3
+  m_trackedJob: {fileID: 11400000, guid: 66871bec84b05044fbfa1ce224ba2dc7, type: 2}
+  m_requiredCount: 5
 --- !u!114 &4420377211737896490
 MonoBehaviour:
   m_ObjectHideFlags: 0

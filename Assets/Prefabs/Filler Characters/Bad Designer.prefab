@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 1
   m_metric: {fileID: 11400000, guid: fc47b4c9c6bb748d58cf4406ee346805, type: 2}
-  m_value: -0.2
+  m_value: -0.1
 --- !u!114 &1373346615205865190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +44,21 @@ MonoBehaviour:
   m_trigger: 1
   m_metric: {fileID: 11400000, guid: 10db6263ebd2b4317aa24b8cf994933f, type: 2}
   m_value: 0.05
+--- !u!114 &5580733583891652750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709064603856417106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c04b9b622304e8d9b35e536a3976777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 1
+  m_metric: {fileID: 11400000, guid: c86523ddaa42a4e0789573f1a38c4168, type: 2}
+  m_value: -0.15
 --- !u!1001 &1724948075556179808
 PrefabInstance:
   m_ObjectHideFlags: 0
