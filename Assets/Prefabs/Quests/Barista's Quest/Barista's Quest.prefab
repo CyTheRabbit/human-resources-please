@@ -15,9 +15,8 @@ GameObject:
   - component: {fileID: 9175411654042808958}
   - component: {fileID: 4420377211737896490}
   - component: {fileID: 8862874081559200411}
-  - component: {fileID: 1575121139560492803}
   m_Layer: 0
-  m_Name: Designer's Quest
+  m_Name: Barista's Quest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,9 +78,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 4
   m_cards:
-  - {fileID: 1709064603856417106, guid: 3971fdd8c317c1b48b3617f10bc59a25, type: 3}
-  - {fileID: 1709064603856417106, guid: 68fddeb414b2e2944a26e0bf9b12e35e, type: 3}
-  - {fileID: 1709064603856417106, guid: 3971fdd8c317c1b48b3617f10bc59a25, type: 3}
+  - {fileID: 138856934189717977, guid: 93f74a106d8791444afce8a8789bb1d7, type: 3}
+  - {fileID: 138856934189717977, guid: 93f74a106d8791444afce8a8789bb1d7, type: 3}
+  - {fileID: 138856934189717977, guid: 93f74a106d8791444afce8a8789bb1d7, type: 3}
   m_rangeFrom: 3
   m_rangeTo: 100
 --- !u!114 &9175411654042808958
@@ -97,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_type: 0
-  m_trackedJob: {fileID: 11400000, guid: a2e7472591a189d4493e8b43cb3fccf9, type: 2}
+  m_trackedJob: {fileID: 11400000, guid: 5c6f9a918cf756240856759a8d64e25c, type: 2}
   m_requiredCount: 3
 --- !u!114 &4420377211737896490
 MonoBehaviour:
@@ -113,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 6
   m_cards:
-  - {fileID: 6487600327715067267, guid: a316f009c7b4ecc4e949fcad6226da2b, type: 3}
+  - {fileID: 6487600327715067267, guid: c793d2295a64d2e498e530e02612143d, type: 3}
   m_rangeFrom: 0
   m_rangeTo: 0
 --- !u!114 &8862874081559200411
@@ -130,20 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 4
   m_cards:
-  - {fileID: 4302827003567641037, guid: 14aac57a9e8b7c04590e969c5b03b4af, type: 3}
+  - {fileID: 4302827003567641037, guid: b895f85c6ffd9c942a56244df2bf93fc, type: 3}
   m_rangeFrom: 0
   m_rangeTo: 0
---- !u!114 &1575121139560492803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9175411654042808959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0121467293f4c898eb1552dbee4e5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_trigger: 5
-  m_questPool: {fileID: 11400000, guid: da04b647732114bfbacb3d208ecc7f4e, type: 2}
