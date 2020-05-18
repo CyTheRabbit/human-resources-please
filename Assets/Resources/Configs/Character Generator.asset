@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9595eb354f84b49b17c6861e4190910, type: 3}
   m_Name: Character Generator
   m_EditorClassIdentifier: 
+  m_filename: Content/generator
   m_names:
   - Phil Gud
   - Ben Heer

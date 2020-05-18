@@ -25,6 +25,7 @@ namespace Character
         
         public override void Init()
         {
+            m_configs.Init();
         }
 
         public string GenerateName(IEnumerable<string> tags)
