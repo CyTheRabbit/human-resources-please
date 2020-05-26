@@ -30,20 +30,6 @@ MonoBehaviour:
   m_trigger: 1
   m_metric: {fileID: 11400000, guid: fc47b4c9c6bb748d58cf4406ee346805, type: 2}
   m_value: -0.1
---- !u!114 &8638741239996072723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8421944292722131985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb3fedf71f84bbd98436d5e723b879b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_text: {fileID: 4494501879981232343}
-  m_position: {fileID: 11400000, guid: 22376a11cbe8943d5a56e7511934a3c6, type: 2}
 --- !u!114 &8324536527791284490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +45,20 @@ MonoBehaviour:
   m_trigger: 1
   m_metric: {fileID: 11400000, guid: 10db6263ebd2b4317aa24b8cf994933f, type: 2}
   m_value: 0.05
+--- !u!114 &8638741239996072723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421944292722131985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb3fedf71f84bbd98436d5e723b879b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_text: {fileID: 4494501879981232343}
+  m_position: {fileID: 11400000, guid: 22376a11cbe8943d5a56e7511934a3c6, type: 2}
 --- !u!1001 &8405739624040757795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,6 +175,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.data[0]
+      value: I write the code for food on the calculator, I write quickly, but the
+        code is vermicelli, it is difficult to read. Please take me, I have nothing
+        to eat.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b927029245749f6a0fb84e53ca8708, type: 3}

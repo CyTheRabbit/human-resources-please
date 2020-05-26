@@ -184,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
         type: 3}
       propertyPath: m_customDescriptions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
         type: 3}
@@ -201,6 +201,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_customDescriptions.Array.data[1]
       value: I know how to use Exgrid, Ward and Odin-Ass.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.data[2]
+      value: Well, I know how to count numbers, I graduated from high school ...
+        Well, then I'll figure it out, I learn very quickly, and generally very sociable.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b927029245749f6a0fb84e53ca8708, type: 3}
