@@ -171,6 +171,19 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.data[0]
+      value: Well, I saw your products, in general they are not bad, but I would
+        honestly add a couple of elements to the interface and add a couple of details
+        to the functionality. In general, your product can be promoted in different
+        ways, I would suggest spam on Facebook, for starters.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b927029245749f6a0fb84e53ca8708, type: 3}
 --- !u!1 &6412576857485246363 stripped

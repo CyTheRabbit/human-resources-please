@@ -198,8 +198,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
         type: 3}
+      propertyPath: m_customDescriptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
       propertyPath: m_tags.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.data[0]
+      value: "You know, nothing serious. I don\u2019t understand why everyone praises
+        me. All you had to do was save a couple of times the data from the servers
+        from DDoS attacks, and suddenly everyone remembered you. When for 10 years
+        did not notice. Well such human nature, don\u2019t you?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b927029245749f6a0fb84e53ca8708, type: 3}

@@ -186,6 +186,18 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.data[0]
+      value: Guys, all your marketing is in the complete Ass, Now I will show you
+        how to attract people - get rockets and fireworks, now there will be many
+        explosions!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b927029245749f6a0fb84e53ca8708, type: 3}
 --- !u!1 &6412576857485246363 stripped
