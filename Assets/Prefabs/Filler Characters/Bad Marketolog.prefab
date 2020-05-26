@@ -43,7 +43,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 1
   m_metric: {fileID: 11400000, guid: fc47b4c9c6bb748d58cf4406ee346805, type: 2}
-  m_value: -0.1
+  m_value: -0.05
 --- !u!1001 &6393390444281545129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ PrefabInstance:
     - target: {fileID: 20246482016484914, guid: 53b927029245749f6a0fb84e53ca8708,
         type: 3}
       propertyPath: m_Name
-      value: NBad Marketolog
+      value: Bad Marketolog
       objectReference: {fileID: 0}
     - target: {fileID: 20246482016484917, guid: 53b927029245749f6a0fb84e53ca8708,
         type: 3}
