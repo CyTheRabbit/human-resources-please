@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
         Init();
     }
 
+    private void OnDestroy()
+    {
+        Release();
+    }
+
     private static void RevealEvent(ISwipable card, BaseEventData _)
     {
         card.Reveal();
@@ -87,5 +92,11 @@ public class GameManager : MonoBehaviour
         
         m_events.Queue.BeforeCardChanged += HidePrevCard;
         m_events.Queue.CardChanged += ShowNextCard;
+    }
+
+    private void Release()
+    {
+        m_events.Queue.BeforeCardChanged -= HidePrevCard;
+        m_events.Queue.CardChanged -= ShowNextCard;
     }
 }

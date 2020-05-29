@@ -40,12 +40,6 @@ namespace UI
             }
         }
 
-        private void Awake()
-        {
-            controller = GetComponent<SwipeController>();
-            if (m_target != null) Target = m_target.GetComponent<RectTransform>();
-        }
-
         public void OnDestroy()
         {
             swipeOutAnimation.Finish();
@@ -108,6 +102,9 @@ namespace UI
 
         public void Init()
         {
+            controller = GetComponent<SwipeController>();
+            if (m_target != null) Target = m_target.GetComponent<RectTransform>();
+
             tiltAnimation = new PropertyCurve(m_tiltConfig, UpdateRotationAnimated);
             slideAnimation = new PropertyCurve(m_slideConfig, UpdatePositionAnimated);
             swipeOutAnimation = new PropertyAnimation(this, m_swipeOutConfig, UpdatePosition);
