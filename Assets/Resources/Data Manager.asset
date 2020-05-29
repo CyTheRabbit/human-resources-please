@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Data Manager
   m_EditorClassIdentifier: 
   m_events: {fileID: 11400000, guid: e4a5a4c1d417847668344674adeef3c8, type: 2}
+  m_company: {fileID: 11400000, guid: 39230e448e9dd48c48f5f0b2d1ea852a, type: 2}
   m_metrics:
   - {fileID: 11400000, guid: fc47b4c9c6bb748d58cf4406ee346805, type: 2}
   - {fileID: 11400000, guid: 457b848aa5d5d444fb0efe3b27609569, type: 2}

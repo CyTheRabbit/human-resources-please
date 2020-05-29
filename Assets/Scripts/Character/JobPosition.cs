@@ -19,6 +19,7 @@ namespace Character
         public void Hire()
         {
             Hired?.Invoke();
+            Resources.FindObjectsOfTypeAll<EventManager>()[0].Company.OnEmployeeHired();
         }
 
         public void Skip()

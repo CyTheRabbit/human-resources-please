@@ -8,6 +8,8 @@ namespace Company
     {
         public event Action MetricChanged = null;
         public event Action MetricEmptied = null;
+        public event Action EmployeeHired = null;
+        public event Action QuestCompleted = null;
 
         public void OnMetricChanged()
         {
@@ -17,6 +19,16 @@ namespace Company
         public void OnMetricEmptied()
         {
             MetricEmptied?.Invoke();
+        }
+
+        public void OnEmployeeHired()
+        {
+            EmployeeHired?.Invoke();
+        }
+
+        public void OnQuestCompleted()
+        {
+            QuestCompleted?.Invoke();
         }
     }
 }

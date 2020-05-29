@@ -9,6 +9,8 @@ using UnityEngine;
 public class DataManager : BaseManager
 {
     [SerializeField] private EventManager m_events = null;
+    [Space]
+    [SerializeField] private CompanyData m_company = null;
     [SerializeField] private MetricData[] m_metrics = null;
 
 
@@ -41,6 +43,7 @@ public class DataManager : BaseManager
     {
         canDispatch = true;
         currentCard = null;
+        m_company.Init();
         foreach (MetricData metric in Metrics) metric.Init();
     }
 }

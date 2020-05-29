@@ -37,6 +37,8 @@ namespace Quests
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, PassEvent);
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
+
+                Resources.FindObjectsOfTypeAll<EventManager>()[0].Company.OnQuestCompleted();
             }
         }
 
