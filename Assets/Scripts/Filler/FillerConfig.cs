@@ -8,6 +8,9 @@ namespace Filler
         [SerializeField] private GameObject[] m_employeePrefabs = null;
 
 
+        public GameObject[] Prefabs => m_employeePrefabs;
+
+
         public GameObject PickRandom()
         {
             return Utils.PickRandom(m_employeePrefabs);

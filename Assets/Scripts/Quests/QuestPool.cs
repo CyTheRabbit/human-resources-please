@@ -19,6 +19,10 @@ namespace Quests
             return prefab;
         }
         
+        public void Extend(IEnumerable<GameObject> quests)
+        {
+            availableQuests.AddRange(quests);
+        }
 
         public void Init()
         {
