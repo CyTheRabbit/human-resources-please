@@ -171,6 +171,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324127921374540034, guid: 53b927029245749f6a0fb84e53ca8708,
+        type: 3}
+      propertyPath: m_customDescriptions.Array.data[0]
+      value: Two higher education, a lot of advanced training courses and work in
+        the company nail.cu, I helped keep the company at the top for several years.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53b927029245749f6a0fb84e53ca8708, type: 3}
 --- !u!1 &2915599335770877077 stripped
