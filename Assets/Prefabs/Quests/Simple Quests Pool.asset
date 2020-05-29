@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_quests:
   - {fileID: 3616698003878769456, guid: 47f4f6a40789d4cad9df4540d9ec3269, type: 3}
-  - {fileID: 9175411654042808959, guid: 17e0544be2029d04fa00ccca322869ff, type: 3}
   - {fileID: 9175411654042808959, guid: a8043c291e22aab4b8bf76fdb3c9f2eb, type: 3}
-  - {fileID: 9175411654042808959, guid: d0951f7b48595c34f80c0d8eb901c74d, type: 3}
   - {fileID: 9175411654042808959, guid: 3ee5e927cb912474595fa77f96d03efd, type: 3}
-  - {fileID: 9175411654042808959, guid: bab5304a6a1babe46830d477718e0524, type: 3}
   - {fileID: 9175411654042808959, guid: ee010af17204543499805f59d03968db, type: 3}
+  - {fileID: 9175411654042808959, guid: e04f7fe600b13ee4eab0814852d9986d, type: 3}

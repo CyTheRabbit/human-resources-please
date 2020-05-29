@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,9 +10,19 @@ namespace Quests
         [SerializeField] private bool m_autoStart = false;
 
 
+        private bool isRunning = false;
+
+
         private void Start()
         {
             if (m_autoStart) Init();
+        }
+
+        private void OnDestroy()
+        {
+            if (!isRunning) return;
+            ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
+            ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
         }
 
 
@@ -30,6 +41,8 @@ namespace Quests
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, FailEvent);
                 ExecuteEvents.Execute<IOutcome>(gameObject, null, StopEvent);
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
+
+                isRunning = false;
             }
             else if (passed)
             {
@@ -39,6 +52,8 @@ namespace Quests
                 ExecuteEvents.Execute<ICondition>(gameObject, null, StopEvent);
 
                 Resources.FindObjectsOfTypeAll<EventManager>()[0].Company.OnQuestCompleted();
+
+                isRunning = false;
             }
         }
 
@@ -47,6 +62,7 @@ namespace Quests
         {
             ExecuteEvents.Execute<ICondition>(gameObject, null, InitEvent);
             ExecuteEvents.Execute<IOutcome>(gameObject, null, PrepareEvent);
+            isRunning = true;
         }
 
 

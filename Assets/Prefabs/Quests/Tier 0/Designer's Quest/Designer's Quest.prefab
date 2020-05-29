@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 6
   m_cards:
-  - {fileID: 6487600327715067267, guid: a316f009c7b4ecc4e949fcad6226da2b, type: 3}
+  - {fileID: 6487600327715067267, guid: 43be9ea55c7d5e846a37e3e8a787f2cd, type: 3}
   m_rangeFrom: 0
   m_rangeTo: 0
 --- !u!114 &8862874081559200411
@@ -129,6 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_trigger: 4
   m_cards:
-  - {fileID: 4302827003567641037, guid: 14aac57a9e8b7c04590e969c5b03b4af, type: 3}
+  - {fileID: 4302827003567641037, guid: f107a4b10302fe64e9d7640bb42a95e4, type: 3}
   m_rangeFrom: 0
   m_rangeTo: 0

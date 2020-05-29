@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0121467293f4c898eb1552dbee4e5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_trigger: 5
+  m_trigger: 3
   m_questPool: {fileID: 11400000, guid: da04b647732114bfbacb3d208ecc7f4e, type: 2}
 --- !u!1001 &8702518706124029466
 PrefabInstance:
@@ -24,7 +24,7 @@ PrefabInstance:
     - target: {fileID: 2441293046091312034, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}
       propertyPath: m_Name
-      value: CEO Quest Win Card Variant
+      value: CEO Quest Win Card
       objectReference: {fileID: 0}
     - target: {fileID: 5647476474917930992, guid: 945189d1b59fd4f7092149c63371fd1e,
         type: 3}

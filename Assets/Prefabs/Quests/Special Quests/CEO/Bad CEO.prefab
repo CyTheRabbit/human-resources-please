@@ -15,6 +15,23 @@ MonoBehaviour:
   m_trigger: 1
   m_metric: {fileID: 11400000, guid: fc47b4c9c6bb748d58cf4406ee346805, type: 2}
   m_value: -0.3
+--- !u!114 &2686824863488263294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4924758346459761010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a40a923ee141048dfe702b87e83fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trigger: 2
+  m_cards:
+  - {fileID: 5636179051415822590, guid: 9502b71c9bad146d89cd3b508752f7a6, type: 3}
+  m_rangeFrom: 2
+  m_rangeTo: 3
 --- !u!114 &2799941595940753859
 MonoBehaviour:
   m_ObjectHideFlags: 0
